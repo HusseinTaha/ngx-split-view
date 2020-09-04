@@ -56,13 +56,13 @@ export class AppModule { }
 ### Minimum size pane
 
 ```html
-<split-view direction="horizontal">
+<split-view>
   <div splitPane [splitRatio]="2">Left pane (2/3rds size)</div>
   <div splitPane [splitRatio]="1" minSize="300">Right pane (1/3rd size)</div>
 </split-view>
 ```
 
-### Miniumu
+## Horizontal split
 
 ```html
 <split-view direction="horizontal">
