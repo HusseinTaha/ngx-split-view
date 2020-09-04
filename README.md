@@ -62,7 +62,7 @@ export class AppModule { }
 </split-view>
 ```
 
-## Horizontal split
+### Horizontal split
 
 ```html
 <split-view direction="horizontal">
