@@ -1,14 +1,14 @@
 {
   "name": "ngx-split-view",
-  "description": "A resizable flexbox split layout component for Angular",
-  "version": "1.0.0",
+  "description": "A resizable flex-box split layout component for Angular",
+  "version": "1.0.1",
   "keywords": [
     "angular",
     "component",
     "split-view",
     "split",
     "layout",
-    "flexbox",
+    "flex-box",
     "resize"
   ],
   "license": "MIT",

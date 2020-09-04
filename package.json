@@ -1,6 +1,6 @@
 {
   "name": "ngx-split-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "node scripts/copy-assets.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

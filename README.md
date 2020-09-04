@@ -73,7 +73,7 @@ export class AppModule { }
 
 ### Custom gutter template
 ```html
-<split-view direction="horizontal">
+<split-view>
   <div splitPane [splitRatio]="2">Left pane (2/3rds size)</div>
   <div splitPane [splitRatio]="1">Right pane (1/3rd size)</div>
   <div *gutterTemplate style="background: green"></div>
