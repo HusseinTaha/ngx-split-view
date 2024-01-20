@@ -18,7 +18,7 @@ A split view component for Angular applications that allows users to resize the 
 Install using npm in the usual way
 
 ```bash
-$ npm install ngx-split-view --save
+$ npm install @husseintaha/ngx-split-view --save
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ $ npm install ngx-split-view --save
 
 ```typescript
 // a. Import SplitViewModule
-import { SplitViewModule } from 'ngx-split-view';
+import { SplitViewModule } from '@husseintaha/ngx-split-view';
 
 @NgModule({
   // ....

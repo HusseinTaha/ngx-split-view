@@ -1,5 +1,5 @@
 {
-  "name": "ngx-split-view",
+  "name": "@husseintaha/ngx-split-view",
   "description": "A resizable flex-box split layout component for Angular",
   "version": "1.0.2",
   "keywords": [
