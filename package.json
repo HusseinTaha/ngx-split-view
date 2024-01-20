@@ -12,8 +12,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build-release": "ng build -c production",
+    "build": "ng build  -c production",
     "postbuild": "node scripts/copy-assets.js",
     "test": "ng test",
     "lint": "ng lint",
