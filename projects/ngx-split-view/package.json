@@ -14,10 +14,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vishalmistry/ngx-split-view.git"
+    "url": "git+https://github.com/HusseinTaha/ngx-split-view.git"
   },
   "bugs": {
-    "url": "https://github.com/vishalmistry/ngx-split-view/issues"
+    "url": "https://github.com/HusseinTaha/ngx-split-view/issues"
   },
   "dependencies": {
     "split.js": "^1.6.2",
