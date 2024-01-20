@@ -20,10 +20,11 @@
     "url": "https://github.com/vishalmistry/ngx-split-view/issues"
   },
   "dependencies": {
-    "split.js": "^1.6.2"
+    "split.js": "^1.6.2",
+    "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7"
+    "@angular/common": "^14.3.0",
+    "@angular/core": "^14.3.0"
   }
 }
