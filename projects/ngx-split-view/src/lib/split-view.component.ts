@@ -77,6 +77,7 @@ export class SplitViewComponent implements OnChanges, OnDestroy, AfterContentIni
   @Output() dragEnd = new EventEmitter<DragEvent>();
 
   @Input() expandToMin = false;
+  @Input() useMaxWidth = false;
   @Input() gutterSize = 10;
   @Input() gutterAlign: GutterAlignment = 'center';
   @Input() snapOffset = 30;
@@ -157,6 +158,21 @@ export class SplitViewComponent implements OnChanges, OnDestroy, AfterContentIni
       minSizes.push(d.minSize);
     });
 
+    const elementStyleFn = (dimension, size, gutterSize): Split.Partial<CSSStyleDeclaration> => {
+
+      if (!this.useMaxWidth) {
+        return {
+          flexBasis: 'calc(' + size + '% - ' + gutterSize + 'px)'
+        };
+      }
+      else {
+        return {
+          flexBasis: 'calc(' + size + '% - ' + gutterSize + 'px)',
+          maxWidth: 'calc(' + size + '% - ' + gutterSize + 'px)'
+        };
+      }
+    };
+
     const splitOptions: Split.Options = {
       sizes: this.getSizes(),
       minSize: minSizes,
@@ -166,9 +182,7 @@ export class SplitViewComponent implements OnChanges, OnDestroy, AfterContentIni
       snapOffset: this.snapOffset,
       dragInterval: this.dragInterval,
       direction: this.direction,
-      elementStyle: (dimension, size, gutterSize) => ({
-        flexBasis: 'calc(' + size + '% - ' + gutterSize + 'px)'
-      }),
+      elementStyle: elementStyleFn,
       gutterStyle: (dimension, gutterSize) => ({
         flexBasis: gutterSize + 'px'
       }),
